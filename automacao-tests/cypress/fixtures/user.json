@@ -1,0 +1,16 @@
+{
+  "loginValido": {
+    "user": "standard_user",
+    "password": "secret_sauce"
+  },
+
+  "loginInvalido": {
+    "user": "teste_user",
+    "password": "secret_sauce"
+  },
+
+  "loginBloqueado": {
+    "user": "locked_out_user",
+    "password": "secret_sauce"
+  }
+}
