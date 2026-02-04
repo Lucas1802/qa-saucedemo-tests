@@ -18,3 +18,16 @@
 ---
 
 
+## Feature: Checkout
+
+## Objetivos
+- Garantindo a validação e funcionamento de Checkout de produtos
+
+## Cenários
+- Usuário consegue finalizar a compra com sucesso
+- Sistema informa erro após tentativa de checkout sem dados obrigatórios
+- Sistema informa erro após informações incompletas
+- Usuário cancela checkout antes de finalizar
+- Usuário retorna ao fluxo anterior sem concluir a compra
+- Sistema retorna as mesmas informações do carrinho no resumo final
+- Sistema informa erro após usuario digitar formato invalido de Postal code

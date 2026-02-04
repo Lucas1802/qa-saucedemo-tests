@@ -12,5 +12,17 @@
   "loginBloqueado": {
     "user": "locked_out_user",
     "password": "secret_sauce"
+  },
+
+  "checkoutValido": {
+    "firstName": "TesteFirstName",
+    "lastName": "TesteLastName",
+    "postalCode": "99999-999"
+  },
+
+  "checkoutInvalido": {
+    "firstName": null,
+    "lastName": "TesteLastName",
+    "postalCode": "99999-999"
   }
 }
