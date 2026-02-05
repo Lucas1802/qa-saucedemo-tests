@@ -5,9 +5,9 @@ import MenuPage from '../pages/menuPage'
 const loginPage = new LoginPage ()
 const menuPage = new MenuPage ()
 
-describe('Checkout - Saucedemo', () => { 
+describe('Menu - Saucedemo', () => { 
 
-it('Checkout - Logout', () => { 
+it('Menu - Logout', () => { 
         loginPage.acessarLoginPage()
         cy.get("[data-test='login-container']").should('be.visible') //assertion /login
         loginPage.realizarLogin(user.loginValido.user, user.loginValido.password)
@@ -16,5 +16,5 @@ it('Checkout - Logout', () => {
         menuPage.menuLogoutSite()
         cy.get("[data-test='login-container']").should('be.visible') //assertion /Volta para o login
     });
-
+    
 }); 

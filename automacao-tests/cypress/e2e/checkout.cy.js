@@ -5,7 +5,6 @@ import CartPage from '../pages/cartPage'
 import CheckoutStepOnePage from '../pages/checkoutStepOnePage'
 import CheckoutStepTwoPage from '../pages/checkoutStepTwoPage'
 import CheckoutCompletePage from '../pages/checkoutCompletePage'
-import MenuPage from '../pages/menuPage'
 
 const loginPage = new LoginPage ()
 const inventoryPage = new InventoryPage ()
@@ -13,7 +12,6 @@ const cartPage = new CartPage ()
 const checkoutStepOnePage = new CheckoutStepOnePage ()
 const checkoutStepTwoPage = new CheckoutStepTwoPage ()
 const checkoutCompletePage = new CheckoutCompletePage ()
-const menuPage = new MenuPage ()
 
 describe('Checkout - Saucedemo', () => { 
     
