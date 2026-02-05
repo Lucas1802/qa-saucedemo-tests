@@ -17,7 +17,6 @@
 
 ---
 
-
 ## Feature: Checkout
 
 ## Objetivos
@@ -31,3 +30,14 @@
 - Usuário retorna ao fluxo anterior sem concluir a compra
 - Sistema retorna as mesmas informações do carrinho no resumo final
 - Sistema informa erro após usuario digitar formato invalido de Postal code
+
+---
+
+## Feature: Menu
+
+## Objetivos
+- Validar o funcionamento do menu e o impacto das ações
+
+## Cenários
+- Usuário consegue encerrar a sessão através do menu (logout)
+- Usuário redefine a aplicação através do Reset App State

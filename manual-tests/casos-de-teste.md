@@ -584,3 +584,76 @@ Crítica
 - O sistema não possui validação de formato para Postal Code
 
 ---
+
+### CT_menu_001 – Entrar no menu e fazer logout do usuario
+
+**Pré-condições:**
+- Usuário logado no sistema
+
+**Passo a passo:**
+1. Realizar login
+2. Abrir o menu
+3. Clicar em logout
+
+**Resultado esperado:**
+- Usuário é redirecionado para aba de login novamente
+
+**Suite de teste:**  
+Feature de menu
+
+**Ambiente de teste:**
+- Sistema: Windows  
+- Navegador: Chrome v143  
+- Ambiente: QA
+
+**Status:**  
+Passou
+
+**Automatizado:**  
+Sim
+
+**Prioridade:**  
+Média
+
+**Severidade:**  
+Média
+
+---
+
+### CT_menu_002 – Entrar no menu e fazer reset-app-state do site
+
+**Pré-condições:**
+- Usuário logado no sistema
+
+**Passo a passo:**
+1. Realizar login
+2. Abrir o menu
+3. Clicar em Reset App State
+
+**Resultado esperado:**
+- Todas alterações feitas anteriormente são redefinidas ao padrão (itens do carrinho, estado visual dos produtos e filtros)
+
+**Resultado encontrado:**
+- O sistema redefine apenas o carrinho, o filtro ainda mantem, e os itens ainda permanecem como adicionados na /inventory de forma visual (UI)
+
+**Suite de teste:**  
+Feature de menu
+
+**Ambiente de teste:**
+- Sistema: Windows  
+- Navegador: Chrome v143  
+- Ambiente: QA
+
+**Status:**  
+Falhou
+
+**Automatizado:**  
+Não
+
+**Prioridade:**  
+Baixa
+
+**Severidade:**  
+Baixa
+
+---

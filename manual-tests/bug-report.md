@@ -39,3 +39,45 @@ Média
 **Evidencia**
 
 [▶️ Vídeo do bug](./evidencias/BUG_checkout_001.mp4)
+
+---
+
+### BUG_menu_001
+
+**Titulo:**
+- Sistema não redefine o site por completo ao clicar em Reset App State
+
+**Pré-condições:**
+- Usuário logado no sistema
+
+**Passo a passo:**
+1. Realizar login
+2. Abrir o menu
+3. Clicar em Reset App State  
+
+**Resultado esperado:**
+- Todas alterações feitas anteriormente são redefinidas ao padrão (itens do carrinho, estado visual dos produtos e filtros)
+
+**Resultado encontrado**
+- O sistema redefine apenas o carrinho, o filtro ainda mantem, e os itens ainda permanecem como adicionados na /inventory de forma visual (UI)
+
+**Ambiente:**
+- Windows
+- Chrome v143
+- QA
+
+**Prioridade:**  
+Baixa
+
+**Severidade:**  
+Baixa
+
+**Tipo**
+- Funcional
+- Validação
+
+**Evidencia**
+
+[▶️ Vídeo do bug](./evidencias/BUG_menu_001.mp4)
+
+---

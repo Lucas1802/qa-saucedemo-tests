@@ -10,7 +10,13 @@ class CheckoutStepOnePage {
         return seletores
     }
 
-    preencherCheckout ({firstName = null, lastName = null, postalCode = null}) {
+    preencherCheckoutValido (firstName, lastName, postalCode) {
+        cy.get(this.listaSeletores().campoFirstName).type(firstName)
+        cy.get(this.listaSeletores().campoLastName).type(lastName)+
+        cy.get(this.listaSeletores().campoPostalCode).type(postalCode)
+    }
+
+    preencherCheckoutInvalido ({firstName = null, lastName = null, postalCode = null}) { // Desta forma consigo testar testes válidos e inválidos e controlar quais campos vão ser preenchidos
         if(firstName !== null) {
             cy.get(this.listaSeletores().campoFirstName).type(firstName)
         }
