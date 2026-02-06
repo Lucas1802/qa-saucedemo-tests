@@ -671,7 +671,7 @@ Baixa
 3. Selecionar a opção de name (Z to A) 
 
 **Resultado esperado:** 
-- istema ordena os produtos da página Inventory em ordem alfabética decrescente (Z to A)
+- Sistema ordena os produtos da página Inventory em ordem alfabética decrescente (Z to A)
 
 **Suite de teste:** 
 Feature de Inventory 
@@ -707,7 +707,7 @@ Média
 2. Clicar no filtro de ordenar 
 3. Selecionar a opção de price (high to low) 
 
-**Resultado esperado:** 
+**Resultado esperado:**
 - Sistema ordena os produtos da página Inventory do maior para o menor valor
 
 **Suite de teste:** 
@@ -730,74 +730,39 @@ Média
 **Severidade:** 
 Média
 
-### CT_inventory_001 – Sistema ordena produtos por nome de (Z to A)
-
-**Pré-condições:**
-- Usuário logado no sistema
-- Página de Inventory carregada
-- Produtos visiveis
-
-**Passo a passo:**
-1. Realizar login
-2. Clicar no filtro de ordenar
-3. Selecionar a opção de `name (Z to A)`
-
-**Resultado esperado:**
-- Sistema ordena a feature inventory de produtos para ordem alfabética decrescente de name `Z to A`
-
-**Suite de teste:**  
-Feature de Inventory
-
-**Ambiente de teste:**
-- Sistema: Windows  
-- Navegador: Chrome v143  
-- Ambiente: QA
-
-**Status:**  
-Passou
-
-**Automatizado:**  
-Sim
-
-**Prioridade:**  
-Média
-
-**Severidade:**  
-Média
-
 ---
 
-### CT_inventory_002 – Sistema ordena produtos por preço de (high to low)
+### CT_inventory_003 – Ordenar produtos por preço de (low to high)  
 
-**Pré-condições:**
-- Usuário logado no sistema
-- Página de Inventory carregada
-- Produtos visiveis
+**Pré-condições:** 
+- Usuário logado no sistema 
+- Página de Inventory carregada 
+- Produtos visiveis 
 
-**Passo a passo:**
-1. Realizar login
-2. Clicar no filtro de ordenar
-3. Selecionar a opção de `price (high to low)`
+**Passo a passo:** 
+1. Realizar login 
+2. Clicar no filtro de ordenar 
+3. Selecionar a opção de price (low to high) 
 
-**Resultado esperado:**
-- Sistema ordena a feature inventory de produtos para ordem de maior para menor valor `high to low`
+**Resultado esperado:** 
+- Sistema ordena os produtos da página Inventory do menor para o maior valor
 
-**Suite de teste:**  
-Feature de Inventory
+**Suite de teste:** 
+Feature de Inventory 
 
-**Ambiente de teste:**
-- Sistema: Windows  
-- Navegador: Chrome v143  
-- Ambiente: QA
+**Ambiente de teste:** 
+- Sistema: Windows 
+- Navegador: Chrome v143 
+- Ambiente: QA 
 
-**Status:**  
-Passou
+**Status:** 
+Passou 
 
-**Automatizado:**  
-Sim
+**Automatizado:** 
+Sim 
 
-**Prioridade:**  
-Média
+**Prioridade:** 
+Média 
 
-**Severidade:**  
+**Severidade:** 
 Média
