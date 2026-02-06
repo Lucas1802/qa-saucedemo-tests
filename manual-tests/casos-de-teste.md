@@ -766,3 +766,79 @@ Média
 
 **Severidade:** 
 Média
+
+---
+
+### CT_cart_001 – Removendo item do carrinho /cart 
+
+**Pré-condições:** 
+- Usuário logado no sistema 
+- Pelo menos um item adionado ao carrinho
+- Página de cart carregada 
+
+**Passo a passo:** 
+1. Realizar login
+2. Adicionar produto no carrinho 
+3. Abrir o carrinho
+4. Remover o produto 
+
+**Resultado esperado:** 
+- Sistema remove produto que tinha sido adicionado ao carrinho, e produto não aparece mais na lista
+
+**Suite de teste:** 
+Feature de Cart
+
+**Ambiente de teste:** 
+- Sistema: Windows 
+- Navegador: Chrome v143 
+- Ambiente: QA 
+
+**Status:** 
+Passou 
+
+**Automatizado:** 
+Sim 
+
+**Prioridade:** 
+Média 
+
+**Severidade:** 
+Média
+
+---
+
+### CT_cart_002 – Removendo ultimo item do carrinho /cart 
+
+**Pré-condições:** 
+- Usuário logado no sistema 
+- Pelo menos dois item adionado ao carrinho
+- Página de cart carregada 
+
+**Passo a passo:** 
+1. Realizar login
+2. Adicionar produtos no carrinho 
+3. Abrir o carrinho
+4. Remover o ultimo produto
+
+**Resultado esperado:** 
+- Sistema remove o ultimo produto que tinha sido adicionado ao carrinho, e produto não aparece mais na lista
+
+**Suite de teste:** 
+Feature de Cart
+
+**Ambiente de teste:** 
+- Sistema: Windows 
+- Navegador: Chrome v143 
+- Ambiente: QA 
+
+**Status:** 
+Passou 
+
+**Automatizado:** 
+Sim 
+
+**Prioridade:** 
+Média 
+
+**Severidade:** 
+Média

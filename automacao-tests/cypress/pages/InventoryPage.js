@@ -1,7 +1,9 @@
 class InventoryPage {
     listaSeletores(){
         const seletores = {
-            selecionarProduto: "[data-test='add-to-cart-sauce-labs-backpack']",
+            selecionarProduto_1: "[data-test='add-to-cart-sauce-labs-backpack']",
+            selecionarProduto_2: "[data-test='add-to-cart-sauce-labs-bike-light']",
+            selecionarProduto_3: "[data-test='add-to-cart-sauce-labs-bolt-t-shirt']",
             acessarCarrinho: "[data-test='shopping-cart-link']",
             botaoOrdenarProdutos: "[data-test='product-sort-container']",
         }
@@ -9,7 +11,13 @@ class InventoryPage {
     }
     
     addProduto () {
-        cy.get(this.listaSeletores().selecionarProduto).click()
+        cy.get(this.listaSeletores().selecionarProduto_1).click()
+    }
+
+    addOutrosProdutos () {
+        cy.get(this.listaSeletores().selecionarProduto_1).click()
+        cy.get(this.listaSeletores().selecionarProduto_2).click()
+        cy.get(this.listaSeletores().selecionarProduto_3).click()
     }
 
     accessarCarrinho () {
