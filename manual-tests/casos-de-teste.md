@@ -658,6 +658,78 @@ Baixa
 
 ---
 
+### CT_inventory_001 – Ordenar produtos por nome de (Z to A) 
+
+**Pré-condições:** 
+- Usuário logado no sistema 
+- Página de Inventory carregada 
+- Produtos visiveis 
+
+**Passo a passo:** 
+1. Realizar login 
+2. Clicar no filtro de ordenar 
+3. Selecionar a opção de name (Z to A) 
+
+**Resultado esperado:** 
+- istema ordena os produtos da página Inventory em ordem alfabética decrescente (Z to A)
+
+**Suite de teste:** 
+Feature de Inventory 
+
+**Ambiente de teste:** 
+- Sistema: Windows 
+- Navegador: Chrome v143 
+- Ambiente: QA 
+
+**Status:** 
+Passou 
+
+**Automatizado:** 
+Sim 
+
+**Prioridade:** 
+Média 
+
+**Severidade:** 
+Média 
+
+--- 
+
+### CT_inventory_002 – Ordenar produtos por preço de (high to low) 
+
+**Pré-condições:** 
+- Usuário logado no sistema 
+- Página de Inventory carregada 
+- Produtos visiveis 
+
+**Passo a passo:** 
+1. Realizar login 
+2. Clicar no filtro de ordenar 
+3. Selecionar a opção de price (high to low) 
+
+**Resultado esperado:** 
+- Sistema ordena os produtos da página Inventory do maior para o menor valor
+
+**Suite de teste:** 
+Feature de Inventory 
+
+**Ambiente de teste:** 
+- Sistema: Windows 
+- Navegador: Chrome v143 
+- Ambiente: QA 
+
+**Status:** 
+Passou 
+
+**Automatizado:** 
+Sim 
+
+**Prioridade:** 
+Média 
+
+**Severidade:** 
+Média
+
 ### CT_inventory_001 – Sistema ordena produtos por nome de (Z to A)
 
 **Pré-condições:**
