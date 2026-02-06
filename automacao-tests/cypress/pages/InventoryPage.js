@@ -3,7 +3,7 @@ class InventoryPage {
         const seletores = {
             selecionarProduto: "[data-test='add-to-cart-sauce-labs-backpack']",
             acessarCarrinho: "[data-test='shopping-cart-link']",
-            botaoOrdenarProdutos: ".select_container",
+            botaoOrdenarProdutos: "[data-test='product-sort-container']",
         }
         return seletores
     }
@@ -16,8 +16,8 @@ class InventoryPage {
         cy.get(this.listaSeletores().acessarCarrinho).click()
     }
 
-    filtroOrdenarProdutos () {
-        cy.get(this.listaSeletores().botaoOrdenarProdutos).click()
+    filtroOrdenarProdutos (valorOrdenacao) {
+        cy.get(this.listaSeletores().botaoOrdenarProdutos).select(valorOrdenacao)
     }
 }
 export default InventoryPage
