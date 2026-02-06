@@ -41,3 +41,14 @@
 ## Cenários
 - Usuário consegue encerrar a sessão através do menu (logout)
 - Usuário redefine a aplicação através do Reset App State
+
+---
+
+## Feature: Inventory
+
+## Objetivos
+- Validar o funcionamento da ordenação de produtos por nome e preços
+
+## Cenários
+- Usuário consegue ordenar produtos por nome
+- Usuário consegue ordenar produtos por preço
