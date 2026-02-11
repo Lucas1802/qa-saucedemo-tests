@@ -894,7 +894,7 @@ Baixa
 3. Clicar no botão **Checkout** 
 
 **Resultado esperado:** 
-- Exibir mensagem de erro dizendo que formato esta errado
+- Exibir mensagem de erro dizendo que tem que ter pelo menos 1 item no carrinho
 
 **Resultado encontrado:**
 - O sistema permite que o usuário faça o checkout mesmo sem itens no carrinho
