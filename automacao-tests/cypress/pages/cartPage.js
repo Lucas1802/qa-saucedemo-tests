@@ -4,7 +4,6 @@ class CartPage {
             botaoRemoverProduto: "[data-test='remove-sauce-labs-backpack']",
             botaoCheckout: "[data-test='checkout']",
             botaoRemoverUltimoProduto: "[data-test='remove-sauce-labs-bolt-t-shirt']",
-
         }
         return seletores
     }

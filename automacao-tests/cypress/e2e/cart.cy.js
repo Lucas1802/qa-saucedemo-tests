@@ -25,7 +25,7 @@ describe('Cart - Saucedemo', () => {
         cy.get("[data-test='remove-sauce-labs-backpack']").should('not.exist')
     });
 
-    it.only('Cart - Removendo ultimo item do carrinho', () => {
+    it('Cart - Removendo ultimo item do carrinho', () => {
 
         //deixar os assertions fora do POM
         loginPage.acessarLoginPage()

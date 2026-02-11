@@ -257,7 +257,7 @@ Feature de Checkout
 Passou
 
 **Automatizado:**  
-Não
+Sim - `checkout.cy.js`
 
 **Prioridade:**  
 Alta
@@ -842,3 +842,81 @@ Média
 
 **Severidade:** 
 Média
+
+---
+
+### CT_cart_003 – Voltando para pagina de produtos pelo botão `Continue Shopping` no carrinho
+
+**Pré-condições:** 
+- Usuário logado no sistema 
+- Pelo menos um item adionado ao carrinho
+
+**Passo a passo:** 
+1. Realizar login
+2. Adicionar produtos no carrinho
+3. Abrir o carrinho
+4. Clicar no botão **Continue Shopping** 
+
+**Resultado esperado:** 
+- Usuário retorna para pagina de produtos `/inventory`
+
+**Suite de teste:** 
+Feature de Cart
+
+**Ambiente de teste:** 
+- Sistema: Windows 
+- Navegador: Chrome v143 
+- Ambiente: QA 
+
+**Status:**
+Passou 
+
+**Automatizado:**
+Não
+
+**Prioridade:**
+Baixa
+
+**Severidade:**
+Baixa
+
+---
+
+### CT_cart_004 – Tentando avançar para checkout com carrinho vazio
+
+**Pré-condições:** 
+- Usuário logado no sistema
+- Nenhum produto adicionado no carrinho
+
+**Passo a passo:** 
+1. Realizar login
+2. Abrir o carrinho
+3. Clicar no botão **Checkout** 
+
+**Resultado esperado:** 
+- Exibir mensagem de erro dizendo que formato esta errado
+
+**Resultado encontrado:**
+- O sistema permite que o usuário faça o checkout mesmo sem itens no carrinho
+
+**Suite de teste:**
+Feature de Cart
+
+**Ambiente de teste:** 
+- Sistema: Windows 
+- Navegador: Chrome v143 
+- Ambiente: QA 
+
+**Status:**
+Falhou 
+
+**Automatizado:**
+Não
+
+**Prioridade:**
+Baixa
+
+**Severidade:**
+Baixa
+
+---

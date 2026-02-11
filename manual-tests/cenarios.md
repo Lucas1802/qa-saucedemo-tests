@@ -52,3 +52,18 @@
 ## Cenários 
 - Usuário consegue ordenar produtos por nome
 - Usuário consegue ordenar produtos por preço
+
+---
+
+## Feature: Cart 
+
+## Objetivos 
+- Validar o funcionamento do carrinho ao remover produto que estava no carrinho
+
+## Cenários 
+- Usuário consegue remover produto que estava no carrinho
+- Usuário consegue remover o ultimo adicionado do carrinho
+- Usuário consegue retornar a comprar mesmo depois de ter ido ao carrinho
+- Validar comportamento do sistema ao tentar avançar para checkout com carrinho vazio
+
+

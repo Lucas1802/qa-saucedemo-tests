@@ -81,3 +81,45 @@ Baixa
 [▶️ Vídeo do bug](./evidencias/BUG_menu_001.mp4)
 
 ---
+
+### BUG_cart_001
+
+**Titulo:**
+- Sistema permite que o usuário va para aba de checkout com carrinho vazio
+
+**Pré-condições:**
+- Usuário logado no sistema
+- Nenhum produto adicionado no carrinho
+
+**Passo a passo:**
+1. Realizar login
+2. Abrir o carrinho
+3. Clicar no botão **Checkout**  
+
+**Resultado esperado:**
+- Exibir mensagem de erro dizendo que tem que ter pelo menos um item no carrinho
+
+**Resultado encontrado**
+- O sistema permite que o usuário faça o checkout mesmo sem itens no carrinho
+
+**Ambiente:**
+- Windows
+- Chrome v143
+- QA
+
+**Prioridade:**  
+Baixa
+
+**Severidade:**  
+Baixa
+
+**Tipo:**
+- Funcional
+- Validação
+
+**Obs:**
+- Comportamento pode indicar ausência de regra de negócio
+
+**Evidencia**
+
+[▶️ Vídeo do bug](./evidencias/BUG_cart_001.mp4)
