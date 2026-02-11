@@ -66,4 +66,17 @@
 - Usuário consegue retornar a comprar mesmo depois de ter ido ao carrinho
 - Validar comportamento do sistema ao tentar avançar para checkout com carrinho vazio
 
+---
+
+## Feature: Persistência de Sessão 
+
+## Objetivos 
+- Validar o comportamento do sistema ao dar refresh, navegar e persistência de sessão no sistema 
+
+## Cenários 
+- Usuário atualiza a página após digitar o login
+- Usuário atualiza a página após adicionar produto ao carrinho
+- Usuário adiciona produto ao carrinho e atualiza a página do carrinho
+- Usuário faz logout e tenta voltar usando botão do navegador
+
 

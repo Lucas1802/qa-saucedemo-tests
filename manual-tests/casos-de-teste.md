@@ -920,3 +920,153 @@ Baixa
 Baixa
 
 ---
+
+### CT_persistencia_sessao_001 – Usuário atualiza a página após digitar o login 
+
+**Pré-condições:** 
+- Página de login acessivel 
+
+**Passo a passo:** 
+1. Inserir Username: `standard_user`
+2. Inserir Password: `secret_sauce`
+3. Dar refresh na página
+
+**Resultado esperado:** 
+- Username e Password ficam em branco após o refresh
+- Usuário permanece na tela de login
+
+**Suite de teste:**
+Feature de Persistência de Sessão
+
+**Ambiente de teste:** 
+- Sistema: Windows 
+- Navegador: Chrome v143 
+- Ambiente: QA 
+
+**Status:**
+Passou 
+
+**Automatizado:**
+Não
+
+**Prioridade:**
+Baixa
+
+**Severidade:**
+Baixa
+
+---
+
+### CT_persistencia_sessao_002 – Usuário atualiza a página `/inventory` após adicionar produto ao carrinho 
+
+**Pré-condições:** 
+- Usuário logado no sistema 
+- Pelo menos um item adionado ao carrinho
+
+**Passo a passo:** 
+1. Realizar login
+2. Adicionar produtos no carrinho
+3. Dar refresh na página
+
+**Resultado esperado:** 
+- Itens adicionados ainda permanecem no carrinho
+- Badge mantém o valor
+- Produto ainda fica marcado como `remove`
+
+**Suite de teste:**
+Feature de Persistência de Sessão
+
+**Ambiente de teste:** 
+- Sistema: Windows 
+- Navegador: Chrome v143 
+- Ambiente: QA 
+
+**Status:**
+Passou 
+
+**Automatizado:**
+Não
+
+**Prioridade:**
+Baixa
+
+**Severidade:**
+Baixa
+
+---
+
+### CT_persistencia_sessao_003 – Usuário adiciona produto ao carrinho e atualiza a página `/cart`
+
+**Pré-condições:** 
+- Usuário logado no sistema 
+- Pelo menos um item adionado ao carrinho
+
+**Passo a passo:** 
+1. Realizar login
+2. Adicionar produtos no carrinho
+3. Entra no carrinho `/cart`
+4. Da refresh na página
+
+**Resultado esperado:** 
+- Itens adicionados ainda permanecem no carrinho
+
+**Suite de teste:**
+Feature de Persistência de Sessão
+
+**Ambiente de teste:** 
+- Sistema: Windows 
+- Navegador: Chrome v143 
+- Ambiente: QA 
+
+**Status:**
+Passou 
+
+**Automatizado:**
+Não
+
+**Prioridade:**
+Baixa
+
+**Severidade:**
+Baixa
+
+---
+
+### CT_persistencia_sessao_004 – Usuário faz logout e tenta voltar usando botão do navegador
+
+**Pré-condições:** 
+- Usuário logado no sistema 
+- Botão de voltar do browser acessivel
+
+**Passo a passo:** 
+1. Realizar login
+2. Clicar no menu
+3. Clicar em logout
+4. Clicar no botão de voltar do browser
+
+**Resultado esperado:** 
+- Sistema exibi mensagem de erro:  
+  `Epic sadface: You can only access '/inventory.html' when you are logged in.`
+- Usuário permanece na tela de login 
+
+**Suite de teste:**
+Feature de Persistência de Sessão
+
+**Ambiente de teste:** 
+- Sistema: Windows 
+- Navegador: Chrome v143 
+- Ambiente: QA 
+
+**Status:**
+Passou 
+
+**Automatizado:**
+Não
+
+**Prioridade:**
+Alta
+
+**Severidade:**
+Alta
+
+---

@@ -1,15 +1,16 @@
 import user from '../fixtures/user.json'
 import LoginPage from '../pages/loginPage'
 import InventoryPage from '../pages/InventoryPage'
-import CartPage from '../pages/cartPage'
+import MenuPage from '../pages/menuPage'
+
 
 const loginPage = new LoginPage ()
 const inventoryPage = new InventoryPage ()
-const cartPage = new CartPage ()
+const menuPage = new MenuPage ()
 
-describe('Cart - Saucedemo', () => { 
+describe('Persistencia de Sessao - Saucedemo', () => { 
     
-    it('Cart - Removendo item do carrinho', () => {
+    it('Deve manter estado após refresh na inventory', () => {
 
         //deixar os assertions fora do POM
         loginPage.acessarLoginPage()
@@ -18,27 +19,23 @@ describe('Cart - Saucedemo', () => {
 
         cy.get("[data-test='product-sort-container']").should('be.visible') //assertion /inventory
         inventoryPage.addProduto()
-        inventoryPage.accessarCarrinho()
 
+        cy.reload()
         cy.get("[data-test='inventory-item']").should('contain', 'Sauce Labs Backpack') //assertion /cart
-        cartPage.removerProduto()
-        cy.get("[data-test='remove-sauce-labs-backpack']").should('not.exist')
+        cy.get("[data-test='remove-sauce-labs-backpack']").should('contain', 'Remove')
+                
     });
 
-    it('Cart - Removendo ultimo item do carrinho', () => {
-
-        //deixar os assertions fora do POM
+    //deixar os assertions fora do POM
+    it('Não deve permitir acesso após logout e voltar', () => {
         loginPage.acessarLoginPage()
         cy.get("[data-test='login-container']").should('be.visible') //assertion /login
         loginPage.realizarLogin(user.loginValido.user, user.loginValido.password)
 
         cy.get("[data-test='product-sort-container']").should('be.visible') //assertion /inventory
-        inventoryPage.addOutrosProdutos()
-        inventoryPage.accessarCarrinho()
-
-        cy.get("[data-test='inventory-item']").should('contain', 'Sauce Labs Backpack') //assertion /cart
-        cartPage.removerUltimoProduto()
-        cy.get("[data-test='remove-sauce-labs-bolt-t-shirt']").should('not.exist')
-        
+        menuPage.menuLogoutSite()
+        cy.go('back')
+        cy.get("[data-test='login-container']").should('be.visible') //assertion /login
+        cy.get("[data-test='error']").should('be.visible').and('contain', "Epic sadface: You can only access '/inventory.html' when you are logged in.") // assertion /login de erro apos tentar voltar com botao do navegador
     });
-});
+}); 
